@@ -1,0 +1,20 @@
+@import "tailwindcss" source(none);
+
+@source "index.html";
+
+.list-items {
+    @apply flex flex-wrap justify-center w-4/5 mb-4;
+}
+
+.list-items-index {
+    @apply basis-full md:basis-1/5 bg-cyan-800 md:rounded-tl-3xl md:rounded-bl-3xl pt-5 pl-10 md:pl-5 pb-5 text-white font-bold;
+}
+
+.list-items-content {
+    @apply basis-full md:basis-4/5 pl-10 pr-5 bg-white md:rounded-tr-3xl md:rounded-br-3xl;
+
+    p,
+    ul {
+        @apply pt-5 pb-5;
+    }
+}
