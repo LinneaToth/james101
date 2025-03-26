@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.16 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -161,11 +161,14 @@
   }
 }
 @layer utilities {
-  .relative {
-    position: relative;
+  .mr-auto {
+    margin-right: auto;
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .ml-auto {
+    margin-left: auto;
   }
   .block {
     display: block;
@@ -175,6 +178,18 @@
   }
   .table {
     display: table;
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-full {
     width: 100%;
@@ -200,6 +215,15 @@
   }
   .bg-zinc-100 {
     background-color: var(--color-zinc-100);
+  }
+  .bg-\[url\(thx\.jpg\)\] {
+    background-image: url(thx.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
@@ -250,6 +274,8 @@
   @media (width >= 48rem) {
     padding-left: calc(var(--spacing) * 5);
   }
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .list-items-content {
   flex-basis: 100%;
